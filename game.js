@@ -10,7 +10,12 @@ var index=0;
 $("button").click(function(){
     if(!started){
        $("#level-title").text("level "+level) ;
-       nextSequence();
+        setTimeout(
+  function() 
+  {
+    nextSequence();
+  }, 200);
+       
        
     }
     
